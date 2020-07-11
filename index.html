@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1>Регистрация</h1>
+		<form>
+			<fieldset>
+				<p>Все поля обязательны для заполнения</p>
+				<label>E-mail</label>
+				<input type="email" placeholder="Введите свой e-mail" required>
+				<label>Пароль</label>
+				<input type="password" placeholder="введите пароль" pattern="[A-Za-z0-9]{5,}" required>
+				<p>минимум 5 знаков, латинские буквы, цыфры</p>
+				<label>Проверка пароля</label>
+				<input type="password" placeholder="введите пароль" pattern="[A-Za-z0-9]{5,}" required>
+				<label>Фамилия</label>
+				<input type="text" placeholder="Фамилия" required>
+				<label>Имя</label>
+				<input type="text" placeholder="Имя" required>
+				<label>Сайт</label>
+				<input type="text" placeholder="Ваш сайт" class="site" pattern="[a-z/-]+$" required>
+				<p class="domain">.lifeisgood.com</p>
+				<p>латинские строчные буквы, знак минус</p>
+				<p class="check">
+					<input type="checkbox" class="checkbox" required> Я прочел соглашение и <a href="">принимаю</a> его условия
+				</p>
+			</fieldset>
+			<input type="submit" value="Зарегистрироваться">
+		</form>
+	</div>
+</body></html>
